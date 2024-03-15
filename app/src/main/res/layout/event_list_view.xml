@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--     FILE : event_list_view.xml -->
+<!--     PROJECT : PROG3150 – Mobile Application Development - Assignment 1 -->
+<!--     PROGRAMMER : Shivang Chordia - schordia1092@conestogac.on.ca - 8871092 -->
+<!--     VERSION : 14th Feb 2024 -->
+<!--     DESCRIPTION : This file includes the layout for the List view of events -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/eventNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Event Name" />
+
+    <TextView
+        android:id="@+id/numberOfPeopleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. of People: 0" />
+
+    <TextView
+        android:id="@+id/eventDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: " />
+
+    <TextView
+        android:id="@+id/eventDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description: " />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_event_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@drawable/circular_button"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/btnMakeChecklist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@drawable/circular_button"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            android:text="Checklist"
+            />
+
+        <Button
+            android:id="@+id/delete_event_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@drawable/circular_button"
+            android:visibility="gone"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+</LinearLayout>

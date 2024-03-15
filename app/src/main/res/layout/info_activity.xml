@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="16dp"
+tools:ignore="MissingDefaultResource">
+
+<ImageView
+    android:id="@+id/app_logo"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    app:layout_constraintTop_toBottomOf="@id/app_name"
+    android:src="@drawable/logo"
+    app:layout_constraintStart_toStartOf="parent"
+    />
+
+<TextView
+    android:id="@+id/app_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Plan-Verse"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/app_description"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="PlanVerse is the minimalist's choice for organizing your day. Designed for those who prefer simplicity, PlanVerse focuses on essential functionalities to help you stay on track with your daily tasks."
+    android:textSize="14sp"
+    android:layout_marginLeft="10dp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="@id/app_logo"
+    app:layout_constraintStart_toEndOf="@id/app_logo"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/app_name"
+    android:maxWidth="180dp" />
+
+<TextView
+    android:id="@+id/version_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Version: 1.0"
+    android:textSize="14sp"
+    app:layout_constraintStart_toStartOf="@+id/app_description"
+    app:layout_constraintTop_toBottomOf="@+id/app_description" />
+
+<TextView
+    android:id="@+id/author"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    app:layout_constraintTop_toBottomOf="@id/version_info"
+    android:text="Author:"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/authorName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    app:layout_constraintTop_toBottomOf="@id/version_info"
+    app:layout_constraintLeft_toRightOf="@id/author"
+    android:text="Shivang Chordia"
+    android:textSize="20sp"
+    android:textStyle="italic" />
+
+<TextView
+    android:id="@+id/assignmentPart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    app:layout_constraintTop_toBottomOf="@id/author"
+    android:text="Program:"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/assignmentPartName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    app:layout_constraintTop_toBottomOf="@id/authorName"
+    app:layout_constraintLeft_toRightOf="@id/assignmentPart"
+    android:text="Mobile_App_Dev Assignment 2"
+    android:textSize="20sp"
+    android:textStyle="italic" />
+
+<TextView
+    android:id="@+id/firstVerse"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    app:layout_constraintTop_toBottomOf="@id/assignmentPart"
+    android:text="First Version:"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/VersionDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    app:layout_constraintTop_toBottomOf="@id/assignmentPartName"
+    app:layout_constraintLeft_toRightOf="@id/firstVerse"
+    android:text="11th March 2024"
+    android:textSize="20sp"
+    android:textStyle="italic" />
+
+
+<Button
+    android:id="@+id/btnAuthor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Go to Author's Website"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/black"
+    android:background="@drawable/circular_button"
+    app:layout_constraintTop_toBottomOf="@id/firstVerse"
+    tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnAuthorContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Author"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/circular_button"
+        app:layout_constraintTop_toBottomOf="@id/btnAuthor"
+        tools:ignore="MissingConstraints" />
+
+<Button
+    android:id="@+id/btnAuthorResume"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Know More about Author"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/black"
+    android:background="@drawable/circular_button"
+    app:layout_constraintTop_toBottomOf="@id/btnAuthorContact"
+    tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btnAuthorResume" />
+
+    <TextView
+        android:id="@+id/downloadStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        android:text="Downloading..."
+        android:visibility="gone"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

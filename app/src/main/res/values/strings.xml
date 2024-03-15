@@ -1,0 +1,13 @@
+<!--     FILE : strings.xml -->
+<!--     PROJECT : PROG3150 – Mobile Application Development - Assignment 1 -->
+<!--     PROGRAMMER : Shivang Chordia - schordia1092@conestogac.on.ca - 8871092 -->
+<!--     VERSION : 14th Feb 2024 -->
+<!--     DESCRIPTION : This file includes the strings for the use in App -->
+<resources>
+    <string name="app_name">Plan-verse</string>
+<string name="title_activity_2">App Info</string>
+<string name="activity2">App Info</string>
+<string name="activity3">Random Activity</string>
+<string name="title_activity_3">Random Activity</string>
+<string name="go_back">Go Back</string>
+</resources>

@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Face -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,12m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0"/>
+    <!-- Eyes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,10m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M14,10m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <!-- Mouth -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,16c-1.1,0 -2,-0.9 -2,-2s0.9,-2 2,-2s2,0.9 2,2"/>
+    <!-- Arrow for bored expression -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,18l-2,-2l-2,2"/>
+</vector>

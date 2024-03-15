@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--     FILE : create_event.xml -->
+<!--     PROJECT : PROG3150 – Mobile Application Development - Assignment 1 -->
+<!--     PROGRAMMER : Shivang Chordia - schordia1092@conestogac.on.ca - 8871092 -->
+<!--     VERSION : 14th Feb 2024 -->
+<!--     DESCRIPTION : This file includes the layout for the CreateEventActivity -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    tools:context=".CreateEventActivity">
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/appLabel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Create Event"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:color="#04d9ff"
+        android:background="@drawable/background_rectangle"/>
+    <!-- Event Name -->
+    <TextView
+        android:id="@+id/eventNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/appLabel"
+        app:layout_constraintTop_toBottomOf="@id/appLabel"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/eventNameInput"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text=""
+        android:background="@drawable/edittext_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventNameLabel"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"/>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventNameInput"
+
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:minHeight="75dp"
+        android:text=""
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:background="@drawable/edittext_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Number of People -->
+    <TextView
+        android:id="@+id/numberOfPeopleLabel"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Number of People"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionInput"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/numberOfPeopleInput"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text=""
+        android:background="@drawable/edittext_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfPeopleLabel"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"/>
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfPeopleInput"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:text=""
+        android:background="@drawable/edittext_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateLabel"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"/>
+
+    <!-- Save Event Button -->
+    <Button
+        android:id="@+id/saveEventButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save Event"
+        android:background="@drawable/circular_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateInput"
+        android:layout_marginTop="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

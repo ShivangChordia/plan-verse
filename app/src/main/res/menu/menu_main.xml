@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_info"
+        android:icon="@drawable/app_info_icon"
+        android:title="@string/activity2"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/mymenu_images"
+        android:icon="@drawable/random_gen_icon"
+        android:title="@string/activity3"
+        app:showAsAction="ifRoom"/>
+</menu>
