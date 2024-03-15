@@ -1,0 +1,1 @@
+PlanVerse is the minimalist's choice for organizing your day. Designed for those who prefer simplicity, PlanVerse focuses on essential functionalities to help you stay on track with your daily tasks.   
